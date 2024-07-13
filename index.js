@@ -22,3 +22,6 @@ ifagebutton.onclick = function(){
         resultif.textContent = `You shouldn't be here! Become 18 first.`;
     }
 }
+
+
+// Checked:

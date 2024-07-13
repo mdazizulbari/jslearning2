@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- if statements -->
     <h4>Enter your age below</h4>
     <input id="ifageinput" type="text">
     <button id="ifagebutton">Submit</button>
     <p id="resulfif"></p>
+
+    <!-- Checked (ckd) -->
+     <input type="checkbox" id="ckdchackbox">
+     <label for="ckdchackbox">Donation</label><br><br>
+
+     <input type="radio" name="payment" id="visa">
+     <label for="visa">Visa</label><br>
+     <input type="radio" name="payment" id="paypal">
+     <label for="paypal">Paypal</label><br>
+     <input type="radio" name="payment" id="mastercard">
+     <label for="mastercard">Master Card</label><br><br>
+
+     <button id="ckdsubmit" type="submit">Submit</button><br>
+     <p id="donationresult"></p>
+     <p id="paymentresult"></p>
 
     <script src="index.js"></script>
 </body>
