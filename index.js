@@ -25,3 +25,19 @@ ifagebutton.onclick = function(){
 
 
 // Checked:
+const ckdchackbox = document.getElementById('ckdchackbox');
+const visa = document.getElementById('visa');
+const paypal = document.getElementById('paypal');
+const mastercard = document.getElementById('mastercard');
+const ckdsubmit = document.getElementById('ckdsubmit');
+const donationresult = document.getElementById('donationresult');
+const paymentresult = document.getElementById('paymentresult');
+ckdsubmit.onclick = function(){
+    if(ckdchackbox.checked){donationresult.textContent = `You are donating.`}
+    else{donationresult.textContent = `You are not donating.`}
+
+    if(visa.checked){paymentresult.textContent = `With Visa.`}
+    else if(paypal.checked){paymentresult.textContent = `With PayPal.`}
+    else if(mastercard.checked){paymentresult.textContent = `With Master Card.`}
+    else{paymentresult.textContent = `Please check a paymentmethod.`}
+}
