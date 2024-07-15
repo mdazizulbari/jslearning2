@@ -2,20 +2,20 @@
 const ifageinput = document.getElementById('ifageinput');
 const ifagebutton = document.getElementById('ifagebutton');
 const resultif = document.getElementById('resulfif');
-let age;
+let ifage;
 ifagebutton.onclick = function(){
     age = ifageinput.value;
-    age = Number(age);
-    if(age >= 100){
+    age = Number(ifage);
+    if(ifage >= 100){
         resultif.textContent = `Go and spend time with Nature, use the time you have in something memorable.`;
     }
-    else if(age == 0, age <= 0){
+    else if(ifage == 0, age <= 0){
         resultif.textContent = `Don't start lying here, you are being tracked!`;
     }
-    else if(age >= 18){
+    else if(ifage >= 18){
         resultif.textContent = `Welcome!`;
     }
-    else if(age = ''){
+    else if(ifage = ''){
         resultif.textContent = `Told you to enter the age first.`
     }
     else{
@@ -41,3 +41,24 @@ ckdsubmit.onclick = function(){
     else if(mastercard.checked){paymentresult.textContent = `With Master Card.`}
     else{paymentresult.textContent = `Please check a paymentmethod.`}
 }
+
+
+
+// Ternary Oparator
+// shortcut to if{} else{} statements
+// condition ? codeTrue : codeFalse
+let age = 12;
+let message1 = age >= 18 ? "You're an Adult" : "You're an Minor"
+console.log(message1)
+
+let time = 7
+let greeting = time > 12 ? "Good Morning!" : "Good Afternoon"
+console.log(greeting)
+
+let isStudent = true
+let message2 = isStudent ? "You are a Student." : "You are not a Student."
+console.log(message2)
+
+let purchaseAmount = 3500
+let discount = purchaseAmount >= 100 ? 10 : 0
+console.log(`Your total cost is $${purchaseAmount - purchaseAmount * (discount/100)}`)
