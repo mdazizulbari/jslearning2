@@ -64,3 +64,22 @@ let discount = purchaseAmount >= 100 ? 10 : 0
 console.log(`Your total cost is $${purchaseAmount - purchaseAmount * (discount/100)}`)
 
 // Switch
+let testscore = 60
+let grade
+switch(true){
+    case testscore >= 80: grade ="A+"
+    break
+    case testscore >= 70: grade ="A"
+    break
+    case testscore >= 60: grade ="A-"
+    break
+    case testscore >= 50: grade ="B"
+    break
+    case testscore >= 40: grade ="C"
+    break
+    case testscore >= 33: grade ="D"
+    break
+    case testscore >= 80: grade ="F"
+    break
+}
+console.log(grade)
