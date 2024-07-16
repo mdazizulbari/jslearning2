@@ -62,3 +62,5 @@ console.log(message2)
 let purchaseAmount = 3500
 let discount = purchaseAmount >= 100 ? 10 : 0
 console.log(`Your total cost is $${purchaseAmount - purchaseAmount * (discount/100)}`)
+
+// Switch
