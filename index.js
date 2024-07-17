@@ -83,3 +83,16 @@ switch(true){
 }
 console.log(grade)
 
+// String method : maniplute text (string) at will
+// See documentation for the syntex
+
+
+
+// String Slicing
+let fullname = "SMA Bari"
+// let firstname = fullname.slice(0, 3)
+// let lastname = fullname.slice(4)
+let firstname = fullname.slice(0, fullname.indexOf(" "))
+let lastname = fullname.slice(fullname.indexOf(" ") + 1)
+console.log(firstname)
+console.log(lastname)
