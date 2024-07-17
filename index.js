@@ -79,7 +79,7 @@ switch(true){
     break
     case testscore >= 33: grade ="D"
     break
-    case testscore >= 80: grade ="F"
-    break
+    default: grade ="F"
 }
 console.log(grade)
+
